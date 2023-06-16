@@ -91,3 +91,31 @@
     text-align: center; /* Center the content inside */
   }
   
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 30px; /* Adjust the font size for smaller screens */
+  }
+
+  h2 {
+    font-size: 24px; /* Adjust the font size for smaller screens */
+    height: 80px; /* Adjust the height for smaller screens */
+  }
+
+  label {
+    font-size: 24px; /* Adjust the font size for smaller screens */
+    height: 35px; /* Adjust the height for smaller screens */
+  }
+
+  input[type="number"] {
+    width: 100%; /* Make the input full width on smaller screens */
+  }
+
+  button {
+    width: 100%; /* Make the button full width on smaller screens */
+  }
+
+  #result {
+    width: 100%; /* Make the result box full width on smaller screens */
+    margin-top: 50px; /* Adjust the margin-top for smaller screens */
+  }
+}
