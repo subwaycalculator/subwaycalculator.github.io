@@ -1,121 +1,120 @@
 @font-face {
-    font-family: "Subway";
-    src: url("assets/Subway.ttf") format("truetype");
-  }
-@font-face {
-    font-family: "ResultFont";
-    src: url("assets/ResultFont.ttf") format("truetype");
+  font-family: "Subway";
+  src: url("assets/Subway.ttf") format("truetype");
 }
-  
-  body {
-    font-family: "Subway", Arial, sans-serif;
-    background-color: #303030;
-    margin: 0;
-    padding: 20px;
-    position: relative;
-  }
-  
-  h1 {
-    color: #4caf50;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px; 
-    font-size: 50px;
-    letter-spacing: 4px;
-  }
 
-  h2 {
-    color: #4caf50;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px; 
-    letter-spacing: 2px;
-  }
-  
-  
-  label {
-    font-weight: bold;
-    margin-top: 20px;
-    display: block;
-    display: flex;
-    color: #45a049;
-    font-size: 32px;
-    letter-spacing: 2px;
-    justify-content: center;
-    align-items: center;
-    height: 45px;
-  }
-  
-  input[type="number"] {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    margin-bottom: 10px;
-    display: block; /* Changed from flex to block */
-    margin: 10px auto; /* Added to center the input horizontally */
-    width: 196px; /* Added a width for better alignment */
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    display: block; /* Changed from flex to block */
-    margin: 10px auto; /* Added to center the button horizontally */
-    width: 215px; /* Added a width for better alignment */
-  }
-  
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  #result {
-    margin-top: 100px;
-    border: 1px solid #4caf50;
-    border-radius: 4px;
-    padding: 10px;
-    width: 400px;
-    display: block;
-    font-family: "ResultFont", Arial, sans-serif;
-    background-color: #303030;
-    color: #ffffff;
-    margin: 0 auto; /* Center horizontally */
-    text-align: center; /* Center the content inside */
-  }
-  
+@font-face {
+  font-family: "ResultFont";
+  src: url("assets/ResultFont.ttf") format("truetype");
+}
+
+body {
+  font-family: "Subway", Arial, sans-serif;
+  background-color: #303030;
+  margin: 0;
+  padding: 20px;
+  position: relative;
+}
+
+h1 {
+  color: #4caf50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  font-size: 50px;
+  letter-spacing: 4px;
+}
+
+h2 {
+  color: #4caf50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  letter-spacing: 2px;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 20px;
+  display: block;
+  display: flex;
+  color: #45a049;
+  font-size: 32px;
+  letter-spacing: 2px;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+}
+
+input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+  margin: 10px auto;
+  width: 196px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+  width: 215px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#result {
+  margin-top: 100px;
+  border: 1px solid #4caf50;
+  border-radius: 4px;
+  padding: 10px;
+  width: 400px;
+  display: block;
+  font-family: "ResultFont", Arial, sans-serif;
+  background-color: #303030;
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Media query for smaller screens */
 @media screen and (max-width: 767px) {
   h1 {
-    font-size: 30px; /* Adjust the font size for smaller screens */
+    font-size: 30px;
   }
 
   h2 {
-    font-size: 24px; /* Adjust the font size for smaller screens */
-    height: 80px; /* Adjust the height for smaller screens */
+    height: 80px;
   }
 
   label {
-    font-size: 24px; /* Adjust the font size for smaller screens */
-    height: 35px; /* Adjust the height for smaller screens */
+    font-size: 24px;
+    height: 35px;
   }
 
   input[type="number"] {
-    width: 100%; /* Make the input full width on smaller screens */
+    width: 100%;
   }
 
   button {
-    width: 100%; /* Make the button full width on smaller screens */
+    width: 100%;
   }
 
   #result {
-    width: 100%; /* Make the result box full width on smaller screens */
-    margin-top: 50px; /* Adjust the margin-top for smaller screens */
+    width: 100%;
+    margin-top: 50px;
   }
 }
